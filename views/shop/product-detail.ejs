@@ -1,0 +1,14 @@
+<%- include('../includes/boilerplate.ejs') %>
+    </head>
+
+    <body>
+        <%- include('../includes/navbar.ejs') %>
+        <main class="centered">
+            <h1><%= product.title %></h1>
+            <hr>
+            <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
+            <h2><%= product.description %></h2>
+            <h4> $ <%= product.price %></h4>
+
+            <%- include('../includes/addtocart.ejs') %>
+        </main>
